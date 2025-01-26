@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narendra Mongam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="portfolio.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <div class="nav-bar">
+                <div class="logo">
+                    <h2>Narendra</h2>
+                </div>
+                <div class="nav-links" id="nav-links">
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                    <button>Let's Connect</button>
+                </div>
+                <div class="sidebar">
+                    <button (click)="toggleMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="hero" id="hero">
+        <div class="details">
+            <h2>Hii! I'm <span class="name">Narendra Mongam</span></h2>
+            <h3>I'm a <span id="type"></span></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis repellat iste consequuntur, dignissimos
+                ut eos debitis culpa veniam provident, id dolor veritatis. Delectus perspiciatis accusamus, odit dolorum
+                nihil pariatur debitis?</p>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/narendra-mongam/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/mongamnarendra" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://leetcode.com/u/Narendra_mongam/" target="_blank">
+                    <i class="fa-solid fa-code"></i>
+                </a>
+            </div>
+        </div>
+        <div class="image">
+            <img src="https://raw.githubusercontent.com/judygab/web-dev-projects/42c815099332e69edcef4593d6f593224b94ba40/personal-portfolio/src/assets/img/header-img.svg"
+                alt="">
+        </div>
+    </section>
+
+    <!-- <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+
+        </div>
+    </section> -->
+    <section class="skills-services" id="skills">
+        <h2>Skills & Services</h2>
+        <p>These are my working Skills & Services I have done.</p>
+        <div class="skills-container">
+            <!-- React.js -->
+            <div class="skill-card">
+                <img src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/blogs/2024/2024-04/angular-logo.png?sfvrsn=543455a3_1"
+                    alt="Angular.js Logo">
+                <h3>Angular</h3>
+                <p>Angular for Frontend and Scalable Single-Page Applications Development.</p>
+            </div>
+            <!-- Spring Boot -->
+            <div class="skill-card">
+                <img src="https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/spring-boot/spring-boot.png"
+                    alt="Spring Boot Logo" class="skill-icon">
+                <h3>Spring Boot</h3>
+                <p>Building scalable backend systems and APIs using Spring Boot framework.</p>
+            </div>
+            <!-- Java -->
+            <div class="skill-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java Logo" class="skill-icon">
+                <h3>Java</h3>
+                <p>Experienced in developing robust applications and solving backend logic.</p>
+            </div>
+            <!-- Hibernate & MySQL -->
+            <div class="skill-card">
+                <img src="http://pngimg.com/uploads/mysql/mysql_PNG23.png" alt="Hibernate Logo"
+                    class="skill-icon">
+                <h3>Hibernate & MySQL</h3>
+                <p>Database design and management using Hibernate ORM & MySQL</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <h2>Education</h2>
+        <p>Here is a summary of my educational background:</p>
+        <div class="timeline">
+            <div class="checkpoint">
+                <div>
+                    <h2>School</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi necessitatibus quo harum dolores,</p>
+                </div>
+            </div>
+            <div class="checkpoint">
+                <div>
+                    <h2>inter</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi necessitatibus quo harum dolores, corporis nesciunt sequi esse, sit quas obcaecati deleniti minus beatae optio architecto praesentium sint dolor culpa cumque!</p>
+                </div>
+            </div>
+            <div class="checkpoint">
+                <div>
+                    <h2>BTech</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi necessitatibus quo harum dolores, corporis nesciunt sequi esse, sit quas obcaecati deleniti minus beatae optio architecto praesentium sint dolor culpa cumque!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
