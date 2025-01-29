@@ -27,7 +27,8 @@
                         <li><a href="#education">Education</a></li>
                         <li><a href="#projects">Projects</a></li>
                     </ul>
-                    <button>Let's Connect</button>
+                    <button id="contactButton">Let's Connect</button>
+                    
                 </div>
                 <div class="sidebar">
                     <button onclick="toggleMenu()">
@@ -37,7 +38,8 @@
             </div>
         </nav>
     </header>
-    <section class="hero" id="hero">
+    <section class="hero" id="hero"><div class="stars"></div>
+
         <div class="details">
             <h2>Hii! I'm <span class="name">Narendra Mongam</span></h2>
             <h3>I'm a <span id="type"></span></h3>
@@ -53,6 +55,9 @@
                     <i class="fa-solid fa-code"></i>
                 </a>
             </div>
+            <div class="resume">
+                <button><a href="https://drive.google.com/file/d/1R2c6dueoMTn0mBJSvFzolWrC6mkD1r3P/view?usp=sharing" target="_blank">Resume</a></button>
+            </div>
         </div>
         <div class="image">
             <img src="https://raw.githubusercontent.com/judygab/web-dev-projects/42c815099332e69edcef4593d6f593224b94ba40/personal-portfolio/src/assets/img/header-img.svg"
@@ -65,7 +70,7 @@
         <h2>Skills & Services</h2>
         <p>These are my working Skills & Services I have done.</p>
         <div class="skills" id="skill">
-            <!-- React.js -->
+            
             <div class="skills-container">
                 <div class="skill-card">
                     <img src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/blogs/2024/2024-04/angular-logo.png?sfvrsn=543455a3_1"
@@ -73,20 +78,20 @@
                     <h3>Angular</h3>
                     <p>Angular for Frontend and Scalable Single-Page Applications Development.</p>
                 </div>
-                <!-- Spring Boot -->
+                
                 <div class="skill-card">
                     <img src="https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/spring-boot/spring-boot.png"
                         alt="Spring Boot Logo" class="skill-icon">
                     <h3>Spring Boot</h3>
                     <p>Building scalable backend systems and APIs using Spring Boot framework.</p>
                 </div>
-                <!-- Java -->
+                
                 <div class="skill-card">
                     <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java Logo" class="skill-icon">
                     <h3>Java</h3>
                     <p>Experienced in developing robust applications and solving backend logic.</p>
                 </div>
-                <!-- Hibernate & MySQL -->
+                
                 <div class="skill-card">
                     <img src="http://pngimg.com/uploads/mysql/mysql_PNG23.png" alt="Hibernate Logo" class="skill-icon">
                     <h3>Hibernate & MySQL</h3>
@@ -97,30 +102,29 @@
     </section>
 
     <section id="education" class="education">
-        <h2>Education</h2>
+        <h2 class="heading">Education</h2>
         <p>Here is a summary of my educational background:</p>
         <div class="timeline">
             <div class="checkpoint">
                 <div>
                     <h2>School</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi necessitatibus quo harum dolores,
+                    <p>Completed my schooling from <span>Ardar English Medium</span> ,Konada,Vizianagaram in 2020</p>
+                    <p class="grade">Grade: <span class="marks">10 points</span></p>
                     </p>
                 </div>
             </div>
             <div class="checkpoint">
                 <div>
                     <h2>inter</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi necessitatibus quo harum dolores,
-                        corporis nesciunt sequi esse, sit quas obcaecati deleniti minus beatae optio architecto
-                        praesentium sint dolor culpa cumque!</p>
+                    <p>Completed my secondary education in 2022 from <span>Sree Kasyap Junior College</span> ,Rama Takies,Vizag</p>
+                    <p class="grade">marks: <span class="marks">849</span> out of 1000</p>
                 </div>
             </div>
             <div class="checkpoint">
                 <div>
                     <h2>BTech</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi necessitatibus quo harum dolores,
-                        corporis nesciunt sequi esse, sit quas obcaecati deleniti minus beatae optio architecto
-                        praesentium sint dolor culpa cumque!</p>
+                    <p>Currently pursing my BTech in <span>GIET Institutions</span>,Rajahmundry</p>
+                    <p class="grade">CGPA: <span class="marks">8.91</span></p>
                 </div>
             </div>
         </div>
@@ -131,7 +135,7 @@
 
         <div class="project-cards">
             <div class="card">
-                <div class="image">
+                <div class="images">
                     <img src="assets/images/image.png" alt="">
                 </div>
                 <div class="content">
@@ -144,7 +148,7 @@
                             <i class="fa-brands fa-github"></i>Github
                         </a>
                     </button>
-                    <button>
+                    <button onclick="showerror()">
                         <a href="" target="_blank">
                             <i class="fa-solid fa-play"></i>
                             Live
@@ -153,8 +157,8 @@
                 </div>
             </div>
             <div class="card">
-                <div class="image">
-                    <img src="" alt="">
+                <div class="images">
+                    <img src="assets\images\to_do_list.png" alt="">
                 </div>
                 <div class="content">
                     <h3>To Do List</h3>
@@ -167,7 +171,7 @@
                             <i class="fa-brands fa-github"></i>Github
                         </a>
                     </button>
-                    <button>
+                    <button onclick="showerror()">
                         <a href="" target="_blank">
                             <i class="fa-solid fa-play"></i>
                             Live
@@ -176,8 +180,8 @@
                 </div>
             </div>
             <div class="card">
-                <div class="image">
-                    <img src="" alt="">
+                <div class="images">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.p5nhdLp1UpPBQgFUfXogLQHaD_&pid=Api&P=0&h=180" alt="">
                 </div>
                 <div class="content">
                     <h3>Alumini Association</h3>
@@ -199,8 +203,8 @@
                 </div>
             </div>
             <div class="card">
-                <div class="image">
-                    <img src="" alt="">
+                <div class="images">
+                    <img src="assets\images\Screenshot 2025-01-29 205459.png" alt="">
                 </div>
                 <div class="content">
                     <h3>Netflix Clone</h3>
@@ -213,7 +217,7 @@
                             <i class="fa-brands fa-github"></i>Github
                         </a>
                     </button>
-                    <button>
+                    <button onclick="showerror()">
                         <a href="" target="_blank">
                             <i class="fa-solid fa-play"></i>
                             Live
@@ -225,7 +229,7 @@
     </section>
 
     <section>
-        <div class="container">
+        <div class="container" id="contact">
             <header>
                 <p>Share your thoughts</p>
                 <h1>Love to hear from you</h1>
@@ -234,7 +238,7 @@
     
             <div class="flex">
     
-                <!-- Contact Form Section -->
+               
                 <div>
                     <form>
                         <div style="display: flex; gap: 1rem;">

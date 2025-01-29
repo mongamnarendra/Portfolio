@@ -172,6 +172,28 @@ body {
     }
 }
 
+.stars {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: black;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.star {
+  position: absolute;
+  background: white;
+  opacity: 0.8;
+  border-radius: 50%;
+  animation: twinkle 3s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 0.3; }
+}
+
 .hero {
     padding-top: 50px;
     width: 100%;
@@ -190,6 +212,15 @@ body {
     height: auto; 
     padding: 1rem;
     margin-left: 2rem;
+    animation: slide-in 0.5s linear both;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  } to {
+    transform: translateX(0);
+  }
 }
 
 .name {
@@ -264,8 +295,10 @@ body {
         font-size: 2rem
     }
 
-    
-
+    .hero {
+      justify-content: space-evenly;
+      margin-right: 20px;
+    }
     .details .icons {
         gap: 0.5rem; 
     }
@@ -289,6 +322,7 @@ body {
     margin:-50px 2rem 0 0;
 
 }
+
 
 .image img {
     width: inherit;
@@ -428,7 +462,7 @@ body {
 
 
 /* ---------education--------------------- */
-.education h2 {
+.education .heading {
   text-align: center;
   margin: 50px 0 0;
   font-size: 2rem;
@@ -452,6 +486,23 @@ body {
   text-transform: capitalize;
 }
 
+.checkpoint div h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  background: linear-gradient(to right,#6a11cb,#63b3ed);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.checkpoint div p {
+  margin: 0;
+}
+
+.checkpoint div .grade {
+  margin-top: 10px;
+}
+
 .checkpoint div {
   border:2px solid #888;
   border-radius: 1em; 
@@ -462,14 +513,21 @@ body {
   color: #ccc;
 }
 
+.checkpoint div p span {
+  color: #58a6ff;
+}
+
+.checkpoint div p .marks {
+  color: #6a11cb;
+}
 .checkpoint:nth-child(odd) {
-  border-left: 3px solid #6a11cb;
+  border-left: 3px solid #4c0795;
   padding-left: 3em;
   transform: translateX(17em);
 }
 
 .checkpoint:nth-child(even) {
-  border-right: 3px solid #6a11cb;
+  border-right: 3px solid #4c0795;
   padding-right: 3.1em;
   transform: translateX(-16.86em);
 }
@@ -597,18 +655,18 @@ body {
 }
 
 
-.project-cards .card .image {
+.project-cards .card .images {
   width: 100%;
-  height: 250px;
+  height: 200px;
   border-radius: 20px 20px 0 0;
   padding: 10px;
 }
 
-.project-cards .card .image img {
+.project-cards .card .images img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 0;
+  border-radius: 10px;
 }
 
 .project-cards .card .content {
@@ -622,6 +680,7 @@ body {
   font-size: 1.5rem;
   background-image: linear-gradient(to right,#58a6ff,#6a11cb);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   text-align: center;
   margin-top: 10px;
@@ -657,9 +716,6 @@ body {
 .actions button a {
   color: white;
   text-decoration: none;
-}
-
-.actions button:nth-child(2) {
 }
 
 .actions button i {
@@ -793,4 +849,48 @@ form button:hover {
 footer {
   height: 50px;
   background-color: #1E293B;
+}
+
+
+.resume button {
+  width: 100px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 20px;
+  outline: none;
+  margin: 30px 0;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.resume button::after {
+  content: "";
+    position: absolute;
+    width: 0;
+    height: 50px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    z-index: -1;
+    transition: width 0.5s ease;
+}
+
+
+.resume button:hover::after {
+  width: 130px;
+
+}
+
+.resume button:hover {
+  border: none;
+}
+
+.resume button a {
+  text-decoration: none;
+  color: white;
 }
