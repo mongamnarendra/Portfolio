@@ -62,12 +62,11 @@ createStars();
 
 
 document.getElementById("contactButton").addEventListener("click", function (event) {
-    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+    document.getElementById("contact").scrollIntoView();
 });
 
 function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
-    // Toggle the 'open' class to show/hide the menu
     navLinks.classList.toggle('open');
   }
   
