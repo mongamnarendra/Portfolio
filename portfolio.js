@@ -1,16 +1,16 @@
 
 
 var typed = new Typed("#type", {
-    strings: ["Full-Stack Developer","Frontend Specialist","Problem Solver"], // Use an array here
+    strings: ["Full-Stack Developer", "Frontend Specialist", "Problem Solver"], // Use an array here
     typeSpeed: 50,
     backSpeed: 50,
     loop: true
 });
 
-document.addEventListener("scroll",()=>{
+document.addEventListener("scroll", () => {
     var navbar = document.querySelector(".nav-bar")
 
-    if(window.scrollY > 0) {
+    if (window.scrollY > 0) {
         navbar.classList.add('scrolled')
     } else {
         navbar.classList.remove('scrolled');
@@ -68,10 +68,48 @@ document.getElementById("contactButton").addEventListener("click", function (eve
 function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('open');
-  }
-  
+}
+
 
 function showerror() {
     alert("Sorry For Inconvince Currently live is not avaliable")
 }
+
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        document.getElementById("splashscreen").style.display = "none";
+        document.getElementById("main-content").style.display = "block";
+    }, 4000);
+})
+
+
+function sendMail(event) {
+    event.preventDefault(); // Prevent form refresh
+
+    var params = {
+        firstname: document.getElementById("firstname").value,
+        lastname: document.getElementById("lastname").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value, // Added phone
+        message: document.getElementById("message").value,
+    };
+
+    const serviceid = "service_m3usog4";
+    const templateId = "template_hlpdfx6";
+
+    emailjs.send(serviceid, templateId, params)
+        .then((res) => {
+            // Clear input fields
+            document.getElementById("firstname").value = "";
+            document.getElementById("lastname").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("phone").value = "";
+            document.getElementById("message").value = "";
+
+            console.log(res);
+            alert("Your message was sent successfully!");
+        })
+        .catch((err) => console.error("Error:", err));
+}
+
 

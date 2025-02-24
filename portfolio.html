@@ -14,265 +14,300 @@
 </head>
 
 <body>
-    <header>
-        <nav id="nav">
-            <div class="nav-bar">
-                <div class="logo">
-                    <h2>Narendra</h2>
-                </div>
-                <div class="nav-links" id="nav-links">
-                    <ul>
-                        <li><a href="#hero">Home</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                    </ul>
-                    <button id="contactButton">Let's Connect</button>
-                    
-                </div>
-                <div class="sidebar">
-                    <button onclick="toggleMenu()"  id="toggle">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <section class="hero" id="hero"><div class="stars"></div>
+    <div id="splashscreen">
 
-        <div class="details">
-            <h2>Hii! I'm <span class="name">Narendra Mongam</span></h2>
-            <h3>I'm a <span id="type"></span></h3>
-            <p>Welcome to my portfolio! I’m a passionate and dedicated developer with expertise in building scalable and efficient web applications. With a strong foundation in Spring Boot, Hibernate, MySQL, and Angular, I create seamless and dynamic digital experiences. Explore my work and let's connect to build something amazing.</p>
-            <div class="icons">
-                <a href="https://www.linkedin.com/in/narendra-mongam/" target="_blank">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a href="https://github.com/mongamnarendra" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="https://leetcode.com/u/Narendra_mongam/" target="_blank">
-                    <i class="fa-solid fa-code"></i>
-                </a>
+        <svg width="872" height="96" viewBox="0 0 872 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M112.438 0.9375V24.125C108.771 24.125 106.354 24.7292 105.188 25.9375C104.062 27.1458 103.5 28.8958 103.5 31.1875V93H65.9375L33.3125 41.9375V63.5625C33.3125 66.2708 34.1042 68 35.6875 68.75C37.2708 69.4583 39.8958 69.8125 43.5625 69.8125V93H0.5625V69.8125C4.22917 69.8125 6.85417 69.3333 8.4375 68.375C10.0208 67.375 10.8125 65.5208 10.8125 62.8125V31.1875C10.8125 28.4375 10.0208 26.5833 8.4375 25.625C6.85417 24.625 4.22917 24.125 0.5625 24.125V0.9375H49.6875L80.9375 49.875V31.1875C80.9375 28.4375 80.3542 26.5833 79.1875 25.625C78.0625 24.625 75.6667 24.125 72 24.125V0.9375H112.438ZM166.125 60.875H146.375L145.5 63.5625C144.833 65.3542 144.875 66.8542 145.625 68.0625C146.375 69.2292 147.958 69.8125 150.375 69.8125H153.938V93H115V69.8125H117.562C120.562 69.8125 122.562 69.2292 123.562 68.0625C124.604 66.8542 125.604 65.1042 126.562 62.8125L139.375 31.1875C140.292 28.7708 140.438 27 139.812 25.875C139.229 24.7083 137.417 24.125 134.375 24.125H133.062V0.9375H197.312V24.125H196.062C192.979 24.125 191.125 24.7292 190.5 25.9375C189.917 27.1458 190.104 28.8958 191.062 31.1875L203.875 62.8125C204.375 63.9792 204.812 65 205.188 65.875C205.604 66.7083 206.104 67.4375 206.688 68.0625C207.271 68.6458 208.042 69.0833 209 69.375C210 69.6667 211.271 69.8125 212.812 69.8125H215.375V93H158.562V69.8125H162C164.375 69.8125 165.958 69.2292 166.75 68.0625C167.583 66.8542 167.667 65.3542 167 63.5625L166.125 60.875ZM149.562 51.125H162.875L156.625 31.9375H156.125L149.562 51.125ZM219.312 93V69.8125C222.979 69.8125 225.604 69.3333 227.188 68.375C228.771 67.375 229.562 65.5208 229.562 62.8125V31.1875C229.562 28.4375 228.771 26.5833 227.188 25.625C225.604 24.625 222.979 24.125 219.312 24.125V0.9375H285.5C291.625 0.9375 296.771 1.54167 300.938 2.75C305.146 3.95833 308.5 5.6875 311 7.9375C313.542 10.1875 315.333 12.875 316.375 16C317.458 19.125 318 22.6042 318 26.4375C318 33.4375 316.312 39.0417 312.938 43.25C309.562 47.4167 304.167 49.6667 296.75 50V50.75C300.333 51 303.292 51.6667 305.625 52.75C308 53.8333 309.854 55.25 311.188 57C312.562 58.7083 313.521 60.7917 314.062 63.25C314.646 65.6667 314.938 68.4167 314.938 71.5V74.8125C314.938 75.8542 315.208 76.7708 315.75 77.5625C316.292 78.3125 317.125 78.6875 318.25 78.6875C319.458 78.6875 320.312 78.3125 320.812 77.5625C321.312 76.7708 321.562 75.8542 321.562 74.8125V58.9375H328.75V74.8125C328.75 77.8125 328.292 80.5833 327.375 83.125C326.5 85.625 325.042 87.8125 323 89.6875C320.958 91.5625 318.271 93 314.938 94C311.604 95.0417 307.5 95.5625 302.625 95.5625C297.75 95.5625 293.75 95.0208 290.625 93.9375C287.542 92.8958 285.125 91.4375 283.375 89.5625C281.625 87.6875 280.396 85.5208 279.688 83.0625C279.021 80.5625 278.688 77.9375 278.688 75.1875V70.375C278.688 67.0417 278.5 64.3542 278.125 62.3125C277.75 60.2292 277.125 58.625 276.25 57.5C275.417 56.3333 274.312 55.5625 272.938 55.1875C271.562 54.8125 269.896 54.625 267.938 54.625H266.438V63.5625C266.438 65.7708 267.042 67.375 268.25 68.375C269.5 69.3333 271.708 69.8125 274.875 69.8125V93H219.312ZM266.438 43.5625H271.938C275.438 43.5625 277.833 42.7292 279.125 41.0625C280.458 39.3542 281.125 37 281.125 34C281.125 30.5 280.458 27.9792 279.125 26.4375C277.833 24.8958 275.438 24.125 271.938 24.125H266.438V43.5625ZM389.688 69.8125C391.396 69.8125 392.812 69.6667 393.938 69.375C395.104 69.0833 396.021 68.5417 396.688 67.75C397.396 66.9167 397.875 65.7917 398.125 64.375C398.375 62.9583 398.5 61.1458 398.5 58.9375H420.375V93H331.312V69.8125C334.979 69.8125 337.604 69.3333 339.188 68.375C340.771 67.375 341.562 65.5208 341.562 62.8125V31.1875C341.562 28.4375 340.771 26.5833 339.188 25.625C337.604 24.625 334.979 24.125 331.312 24.125V0.9375H420.375V35H398.5C398.5 32.7917 398.375 30.9792 398.125 29.5625C397.875 28.1458 397.396 27.0417 396.688 26.25C396.021 25.4583 395.104 24.9167 393.938 24.625C392.812 24.2917 391.396 24.125 389.688 24.125H378.438V40.75H398.375V51.8125H378.438V69.8125H389.688ZM537.438 0.9375V24.125C533.771 24.125 531.354 24.7292 530.188 25.9375C529.062 27.1458 528.5 28.8958 528.5 31.1875V93H490.938L458.312 41.9375V63.5625C458.312 66.2708 459.104 68 460.688 68.75C462.271 69.4583 464.896 69.8125 468.562 69.8125V93H425.562V69.8125C429.229 69.8125 431.854 69.3333 433.438 68.375C435.021 67.375 435.812 65.5208 435.812 62.8125V31.1875C435.812 28.4375 435.021 26.5833 433.438 25.625C431.854 24.625 429.229 24.125 425.562 24.125V0.9375H474.688L505.938 49.875V31.1875C505.938 28.4375 505.354 26.5833 504.188 25.625C503.062 24.625 500.667 24.125 497 24.125V0.9375H537.438ZM594.312 69.8125C596.604 69.8125 598.833 69.5625 601 69.0625C603.208 68.5625 605.125 67.5208 606.75 65.9375C608.417 64.3542 609.771 62.0833 610.812 59.125C611.854 56.125 612.375 52.1042 612.375 47.0625C612.375 42.1042 611.875 38.125 610.875 35.125C609.875 32.0833 608.562 29.75 606.938 28.125C605.354 26.5 603.438 25.4375 601.188 24.9375C598.979 24.3958 596.688 24.125 594.312 24.125H588.438V69.8125H594.312ZM541.312 93V69.8125C544.979 69.8125 547.604 69.3333 549.188 68.375C550.771 67.375 551.562 65.5208 551.562 62.8125V31.1875C551.562 28.4375 550.771 26.5833 549.188 25.625C547.604 24.625 544.979 24.125 541.312 24.125V0.9375H607.625C613.583 0.9375 619.354 1.72917 624.938 3.3125C630.521 4.89583 635.479 7.47917 639.812 11.0625C644.188 14.6458 647.688 19.3958 650.312 25.3125C652.979 31.1875 654.312 38.4375 654.312 47.0625C654.312 55.6875 653 62.9375 650.375 68.8125C647.792 74.6875 644.25 79.4167 639.75 83C635.292 86.5833 630.062 89.1667 624.062 90.75C618.062 92.3333 611.688 93.125 604.938 93.125L541.312 93ZM660.188 93V69.8125C663.854 69.8125 666.479 69.3333 668.062 68.375C669.646 67.375 670.438 65.5208 670.438 62.8125V31.1875C670.438 28.4375 669.646 26.5833 668.062 25.625C666.479 24.625 663.854 24.125 660.188 24.125V0.9375H726.375C732.5 0.9375 737.646 1.54167 741.812 2.75C746.021 3.95833 749.375 5.6875 751.875 7.9375C754.417 10.1875 756.208 12.875 757.25 16C758.333 19.125 758.875 22.6042 758.875 26.4375C758.875 33.4375 757.188 39.0417 753.812 43.25C750.438 47.4167 745.042 49.6667 737.625 50V50.75C741.208 51 744.167 51.6667 746.5 52.75C748.875 53.8333 750.729 55.25 752.062 57C753.438 58.7083 754.396 60.7917 754.938 63.25C755.521 65.6667 755.812 68.4167 755.812 71.5V74.8125C755.812 75.8542 756.083 76.7708 756.625 77.5625C757.167 78.3125 758 78.6875 759.125 78.6875C760.333 78.6875 761.188 78.3125 761.688 77.5625C762.188 76.7708 762.438 75.8542 762.438 74.8125V58.9375H769.625V74.8125C769.625 77.8125 769.167 80.5833 768.25 83.125C767.375 85.625 765.917 87.8125 763.875 89.6875C761.833 91.5625 759.146 93 755.812 94C752.479 95.0417 748.375 95.5625 743.5 95.5625C738.625 95.5625 734.625 95.0208 731.5 93.9375C728.417 92.8958 726 91.4375 724.25 89.5625C722.5 87.6875 721.271 85.5208 720.562 83.0625C719.896 80.5625 719.562 77.9375 719.562 75.1875V70.375C719.562 67.0417 719.375 64.3542 719 62.3125C718.625 60.2292 718 58.625 717.125 57.5C716.292 56.3333 715.188 55.5625 713.812 55.1875C712.438 54.8125 710.771 54.625 708.812 54.625H707.312V63.5625C707.312 65.7708 707.917 67.375 709.125 68.375C710.375 69.3333 712.583 69.8125 715.75 69.8125V93H660.188ZM707.312 43.5625H712.812C716.312 43.5625 718.708 42.7292 720 41.0625C721.333 39.3542 722 37 722 34C722 30.5 721.333 27.9792 720 26.4375C718.708 24.8958 716.312 24.125 712.812 24.125H707.312V43.5625ZM822.625 60.875H802.875L802 63.5625C801.333 65.3542 801.375 66.8542 802.125 68.0625C802.875 69.2292 804.458 69.8125 806.875 69.8125H810.438V93H771.5V69.8125H774.062C777.062 69.8125 779.062 69.2292 780.062 68.0625C781.104 66.8542 782.104 65.1042 783.062 62.8125L795.875 31.1875C796.792 28.7708 796.938 27 796.312 25.875C795.729 24.7083 793.917 24.125 790.875 24.125H789.562V0.9375H853.812V24.125H852.562C849.479 24.125 847.625 24.7292 847 25.9375C846.417 27.1458 846.604 28.8958 847.562 31.1875L860.375 62.8125C860.875 63.9792 861.312 65 861.688 65.875C862.104 66.7083 862.604 67.4375 863.188 68.0625C863.771 68.6458 864.542 69.0833 865.5 69.375C866.5 69.6667 867.771 69.8125 869.312 69.8125H871.875V93H815.062V69.8125H818.5C820.875 69.8125 822.458 69.2292 823.25 68.0625C824.083 66.8542 824.167 65.3542 823.5 63.5625L822.625 60.875ZM806.062 51.125H819.375L813.125 31.9375H812.625L806.062 51.125Z"
+                fill="white" />
+        </svg>
+
+    </div>
+    <div id="main-content">
+        <header>
+            <nav id="nav">
+                <div class="nav-bar">
+                    <div class="logo">
+                        <h2>Narendra <span>Mongam</span></h2>
+                    </div>
+                    <div class="nav-links" id="nav-links">
+                        <ul>
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                        <button id="contactButton">Let's Connect</button>
+
+                    </div>
+                    <div class="sidebar">
+                        <button onclick="toggleMenu()" id="toggle">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="hero" id="hero">
+            <div class="stars"></div>
+
+            <div class="details">
+                <h2>Hii! I'm <span class="name">Narendra Mongam</span></h2>
+                <h3>I'm a <span id="type"></span></h3>
+                <p>Welcome to my portfolio! I’m a passionate and dedicated developer with expertise in building scalable
+                    and efficient web applications. With a strong foundation in Spring Boot, Hibernate, MySQL, and
+                    Angular, I create seamless and dynamic digital experiences. Explore my work and let's connect to
+                    build something amazing.</p>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/narendra-mongam/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/mongamnarendra" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://leetcode.com/u/Narendra_mongam/" target="_blank">
+                        <i class="fa-solid fa-code"></i>
+                    </a>
+                </div>
+                <div class="resume">
+                    <button><a href="https://drive.google.com/file/d/1qymrR9rfINbck4Q4N7VEmmN9I7IWVR29/view?usp=sharing"
+                            target="_blank">Resume</a></button>
+                </div>
             </div>
-            <div class="resume">
-                <button><a href="https://drive.google.com/file/d/1R2c6dueoMTn0mBJSvFzolWrC6mkD1r3P/view?usp=sharing" target="_blank">Resume</a></button>
+            <div class="image">
+                <img src="assets\images\portfolio.png"
+                    alt="">
             </div>
-        </div>
-        <div class="image">
-            <img src="https://raw.githubusercontent.com/judygab/web-dev-projects/42c815099332e69edcef4593d6f593224b94ba40/personal-portfolio/src/assets/img/header-img.svg"
-                alt="">
-        </div>
-    </section>
+        </section>
 
 
-    <section class="skills-services" id="skills">
-        <h2>Skills & Services</h2>
-        <p>These are my working Skills & Services I have done.</p>
-        <div class="skills" id="skill">
-            
-            <div class="skills-container">
-                <div class="skill-card">
-                    <img src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/blogs/2024/2024-04/angular-logo.png?sfvrsn=543455a3_1"
-                        alt="Angular.js Logo">
-                    <h3>Angular</h3>
-                    <p>Angular for Frontend and Scalable Single-Page Applications Development.</p>
-                </div>
-                
-                <div class="skill-card">
-                    <img src="https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/spring-boot/spring-boot.png"
-                        alt="Spring Boot Logo" class="skill-icon">
-                    <h3>Spring Boot</h3>
-                    <p>Building scalable backend systems and APIs using Spring Boot framework.</p>
-                </div>
-                
-                <div class="skill-card">
-                    <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java Logo" class="skill-icon">
-                    <h3>Java</h3>
-                    <p>Experienced in developing robust applications and solving backend logic.</p>
-                </div>
-                
-                <div class="skill-card">
-                    <img src="http://pngimg.com/uploads/mysql/mysql_PNG23.png" alt="Hibernate Logo" class="skill-icon">
-                    <h3>Hibernate & MySQL</h3>
-                    <p>Database design and management using Hibernate ORM & MySQL</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section class="skills-services" id="skills">
+            <h2>Skills & Services</h2>
+            <p>These are my working Skills & Services I have done.</p>
+            <div class="skills" id="skill">
 
-    <section id="education" class="education">
-        <h2 class="heading">Education</h2>
-        <p>Here is a summary of my educational background:</p>
-        <div class="timeline">
-            <div class="checkpoint">
-                <div>
-                    <h2>School</h2>
-                    <p>Completed my schooling from <span>Ardar English Medium</span> ,Konada,Vizianagaram in 2020</p>
-                    <p class="grade">Grade: <span class="marks">10 points</span></p>
-                    </p>
-                </div>
-            </div>
-            <div class="checkpoint">
-                <div>
-                    <h2>inter</h2>
-                    <p>Completed my secondary education in 2022 from <span>Sree Kasyap Junior College</span> ,Rama Takies,Vizag</p>
-                    <p class="grade">marks: <span class="marks">849</span> out of 1000</p>
-                </div>
-            </div>
-            <div class="checkpoint">
-                <div>
-                    <h2>BTech</h2>
-                    <p>Currently pursing my BTech in <span>GIET Institutions</span>,Rajahmundry</p>
-                    <p class="grade">CGPA: <span class="marks">8.91</span></p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="projects" id="projects">
-        <h2>Projects</h2>
-        <p>Here are some of the projects I have worked on:</p>
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <img src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/blogs/2024/2024-04/angular-logo.png?sfvrsn=543455a3_1"
+                            alt="Angular.js Logo">
+                        <h3>Angular</h3>
+                        <p>Angular for Frontend and Scalable Single-Page Applications Development.</p>
+                    </div>
 
-        <div class="project-cards">
-            <div class="card">
-                <div class="images">
-                    <img src="assets/images/image.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>Weather Dashboard</h3>
-                    <p>Stay updated with real-time weather conditions on our interactive Weather Dashboard! Get accurate temperature, humidity, wind speed and more!</p>
-                </div>
-                <div class="actions">
-                    <button>
-                        <a href="https://github.com/mongamnarendra/Weather-Dashboard.git" target="_blank">
-                            <i class="fa-brands fa-github"></i>Github
-                        </a>
-                    </button>
-                    <button onclick="showerror()">
-                        <a href="" target="_blank">
-                            <i class="fa-solid fa-play"></i>
-                            Live
-                        </a>
-                    </button>  
-                </div>
-            </div>
-            <div class="card">
-                <div class="images">
-                    <img src="assets\images\to_do_list.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>To Do List</h3>
-                    <p>I created a To Do List Web application ,which have features like adding tasks,deleting tasks and marking the tasks.</p>
-                </div>
-                
-                <div class="actions">
-                    <button>
-                        <a href="https://github.com/mongamnarendra/To_Do_List.git" target="_blank">
-                            <i class="fa-brands fa-github"></i>Github
-                        </a>
-                    </button>
-                    <button onclick="showerror()">
-                        <a href="" target="_blank">
-                            <i class="fa-solid fa-play"></i>
-                            Live
-                        </a>
-                    </button>   
-                </div>
-            </div>
-            <div class="card">
-                <div class="images">
-                    <img src="https://tse2.mm.bing.net/th?id=OIP.p5nhdLp1UpPBQgFUfXogLQHaD_&pid=Api&P=0&h=180" alt="">
-                </div>
-                <div class="content">
-                    <h3>Alumini Association</h3>
-                    <p>I developed a basic Alumni Association Platform using HTML and CSS to create a structured and visually appealing interface for alumni connections.</p>
-                </div>
-                
-                <div class="actions">
-                    <button>
-                        <a href="https://github.com/mongamnarendra/Alumni-Association.git" target="_blank">
-                            <i class="fa-brands fa-github"></i>Github
-                        </a>
-                    </button>
-                    <button>
-                        <a href="https://mongamnarendra.github.io/Alumni-Association/alumini.html" target="_blank">
-                            <i class="fa-solid fa-play"></i>
-                            Live
-                        </a>
-                    </button>   
-                </div>
-            </div>
-            <div class="card">
-                <div class="images">
-                    <img src="assets\images\Screenshot 2025-01-29 205459.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>Netflix Clone</h3>
-                    <p>I developed a netflix clone with HTML and CSS.</p>
-                </div>
-                
-                <div class="actions">
-                    <button>
-                        <a href="https://github.com/mongamnarendra/Netflixclone.git" target="_blank">
-                            <i class="fa-brands fa-github"></i>Github
-                        </a>
-                    </button>
-                    <button onclick="showerror()">
-                        <a href="" target="_blank">
-                            <i class="fa-solid fa-play"></i>
-                            Live
-                        </a>
-                    </button>   
-                </div>
-            </div>
-        </div>
-    </section>
+                    <div class="skill-card">
+                        <img src="https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/spring-boot/spring-boot.png"
+                            alt="Spring Boot Logo" class="skill-icon">
+                        <h3>Spring Boot</h3>
+                        <p>Building scalable backend systems and APIs using Spring Boot framework.</p>
+                    </div>
 
-    <section>
-        <div class="container" id="contact">
-            <header>
-                <p>Share your thoughts</p>
-                <h1>Love to hear from you</h1>
-                <p>I think it's great that you're open to hearing from others! Sharing thoughts fosters connection and creativity. Whether it's a deep insight, casual chat, or random idea, communication builds understanding.</p>
-            </header>
-    
-            <div class="flex">
-    
-               
-                <div>
-                    <form>
-                        <div style="display: flex; gap: 1rem;">
-                            <div style="flex: 1;">
-                                <label for="first-name">First Name*</label>
-                                <input type="text" id="first-name" placeholder="First Name">
+                    <div class="skill-card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java Logo"
+                            class="skill-icon">
+                        <h3>Java</h3>
+                        <p>Experienced in developing robust applications and solving backend logic.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="http://pngimg.com/uploads/mysql/mysql_PNG23.png" alt="Hibernate Logo"
+                            class="skill-icon">
+                        <h3>Hibernate & MySQL</h3>
+                        <p>Database design and management using Hibernate ORM & MySQL</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="education">
+            <h2 class="heading">Education</h2>
+            <p>Here is a summary of my educational background:</p>
+            <div class="timeline">
+                <div class="checkpoint">
+                    <div class="education-details">
+                        <h2>School</h2>
+                        <p>Completed my schooling from <span>Ardar English Medium</span> ,Konada,Vizianagaram in 2020
+                        </p>
+                        <p class="grade">Grade: <span class="marks">10 points</span></p>
+                        </p>
+                    </div>
+                </div>
+                <div class="checkpoint">
+                    <div class="education-details">
+                        <h2>inter</h2>
+                        <p>Completed my secondary education in 2022 from <span>Sree Kasyap Junior College</span> ,Rama
+                            Takies,Vizag</p>
+                        <p class="grade">marks: <span class="marks">849</span> out of 1000</p>
+                    </div>
+                </div>
+                <div class="checkpoint">
+                    <div class="education-details">
+                        <h2>BTech</h2>
+                        <p>Currently pursing my BTech in <span>GIET Institutions</span>,Rajahmundry</p>
+                        <p class="grade">CGPA: <span class="marks">8.91</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <p>Here are some of the projects I have worked on:</p>
+
+            <div class="project-cards">
+                <div class="card">
+                    <div class="images">
+                        <img src="assets/images/image.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Weather Dashboard</h3>
+                        <p>Stay updated with real-time weather conditions on our interactive Weather Dashboard! Get
+                            accurate temperature, humidity, wind speed and more!</p>
+                    </div>
+                    <div class="actions">
+                        <button>
+                            <a href="https://github.com/mongamnarendra/Weather-Dashboard.git" target="_blank">
+                                <i class="fa-brands fa-github"></i>Github
+                            </a>
+                        </button>
+                        <button onclick="showerror()">
+                            <a href="" target="_blank">
+                                <i class="fa-solid fa-play"></i>
+                                Live
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="images">
+                        <img src="assets\images\to_do_list.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>To Do List</h3>
+                        <p>I created a To Do List Web application ,which have features like adding tasks,deleting tasks
+                            and marking the tasks.</p>
+                    </div>
+
+                    <div class="actions">
+                        <button>
+                            <a href="https://github.com/mongamnarendra/To_Do_List.git" target="_blank">
+                                <i class="fa-brands fa-github"></i>Github
+                            </a>
+                        </button>
+                        <button onclick="showerror()">
+                            <a href="" target="_blank">
+                                <i class="fa-solid fa-play"></i>
+                                Live
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="images">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.p5nhdLp1UpPBQgFUfXogLQHaD_&pid=Api&P=0&h=180"
+                            alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Alumini Association</h3>
+                        <p>I developed a basic Alumni Association Platform using HTML and CSS to create a structured and
+                            visually appealing interface for alumni connections.</p>
+                    </div>
+
+                    <div class="actions">
+                        <button>
+                            <a href="https://github.com/mongamnarendra/Alumni-Association.git" target="_blank">
+                                <i class="fa-brands fa-github"></i>Github
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://mongamnarendra.github.io/Alumni-Association/alumini.html" target="_blank">
+                                <i class="fa-solid fa-play"></i>
+                                Live
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="images">
+                        <img src="assets\images\Screenshot 2025-01-29 205459.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Netflix Clone</h3>
+                        <p>I developed a netflix clone with HTML and CSS.</p>
+                    </div>
+
+                    <div class="actions">
+                        <button>
+                            <a href="https://github.com/mongamnarendra/Netflixclone.git" target="_blank">
+                                <i class="fa-brands fa-github"></i>Github
+                            </a>
+                        </button>
+                        <button onclick="showerror()">
+                            <a href="" target="_blank">
+                                <i class="fa-solid fa-play"></i>
+                                Live
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container" id="contact">
+                <header>
+                    <p>Share your thoughts</p>
+                    <h1>Love to hear from you</h1>
+                    <p>I think it's great that you're open to hearing from others! Sharing thoughts fosters connection
+                        and creativity. Whether it's a deep insight, casual chat, or random idea, communication builds
+                        understanding.</p>
+                </header>
+
+                <div class="flex">
+
+
+                    <div>
+                        <form onsubmit="sendMail(event)">
+                            <div style="display: flex; gap: 1rem;">
+                                <div style="flex: 1;">
+                                    <label for="firstname">First Name*</label>
+                                    <input type="text" id="firstname" placeholder="First Name" required>
+                                </div>
+                                <div style="flex: 1;">
+                                    <label for="lastname">Last Name*</label>
+                                    <input type="text" id="lastname" placeholder="Last Name" required>
+                                </div>
                             </div>
-                            <div style="flex: 1;">
-                                <label for="last-name">Last Name*</label>
-                                <input type="text" id="last-name" placeholder="Last Name">
+                            <div>
+                                <label for="email">Email*</label>
+                                <input type="email" id="email" placeholder="Email" required>
                             </div>
-                        </div>
-                        <div>
-                            <label for="email">Email*</label>
-                            <input type="email" id="email" placeholder="Email">
-                        </div>
-                        <div>
-                            <label for="phone">Phone number</label>
-                            <input type="text" id="phone" placeholder="Phone number">
-                        </div>
-                        <div>
-                            <label for="message">Message*</label>
-                            <textarea id="message" placeholder="Leave us a message"></textarea>
-                        </div>
-                        <button type="submit">Send Message</button>
-                    </form>
+                            <div>
+                                <label for="phone">Phone number</label>
+                                <input type="text" id="phone" placeholder="Phone number">
+                            </div>
+                            <div>
+                                <label for="message">Message*</label>
+                                <textarea id="message" placeholder="Leave us a message" required></textarea>
+                            </div>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+
                 </div>
-                
             </div>
-        </div>
-    </section>
-    <footer>
-       <p style="text-align: center;"> momgamnarendra@gmail.com</p>
-    </footer>
+        </section>
+        <footer>
+            <p style="text-align: center;"> momgamnarendra@gmail.com</p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "JNRRXj0RnPI18mgRf",
+            });
+        })();
+    </script>
 </body>
 
 </html
