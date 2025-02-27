@@ -113,3 +113,9 @@ function sendMail(event) {
 }
 
 
+
+document.getElementById("toggle").addEventListener("change", function() {
+    document.body.classList.toggle("light-mode");
+});
+
+
