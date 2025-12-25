@@ -114,8 +114,77 @@ function sendMail(event) {
 
 
 
-document.getElementById("toggle").addEventListener("change", function() {
+document.getElementById("toggle").addEventListener("change", function () {
     document.body.classList.toggle("light-mode");
 });
 
+let projectsContainer = document.querySelector(".project-cards");
 
+async function fetchProjectData() {
+    const response = await fetch('projects.json');
+    let actualProjectData = await response.json();
+    console.log(actualProjectData);
+    loadProjects(actualProjectData); // pass data
+}
+
+function loadProjects(data) {
+  data.forEach(project => {
+
+    // Card
+    const card = document.createElement("div");
+    card.classList.add("card");
+
+    // Images wrapper
+    const imagesDiv = document.createElement("div");
+    imagesDiv.classList.add("images");
+
+    const img = document.createElement("img");
+    img.src = project.image;
+    img.alt = project.title;
+
+    imagesDiv.appendChild(img);
+    card.appendChild(imagesDiv);
+
+    // Content wrapper
+    const contentDiv = document.createElement("div");
+    contentDiv.classList.add("content");
+
+    const title = document.createElement("h3");
+    title.innerText = project.title;
+
+    const desc = document.createElement("p");
+    desc.innerText = project.description;
+
+    contentDiv.appendChild(title);
+    contentDiv.appendChild(desc);
+    card.appendChild(contentDiv);
+
+    // Actions
+    const actionsDiv = document.createElement("div");
+    actionsDiv.classList.add("actions");
+
+    const githubBtn = document.createElement("button");
+    githubBtn.innerHTML = `
+      <a href="${project.github}" target="_blank">
+        <i class="fa-brands fa-github"></i> Github
+      </a>
+    `;
+
+    const liveBtn = document.createElement("button");
+    liveBtn.innerHTML = `
+      <a href="${project.live}" target="_blank">
+        <i class="fa-solid fa-play"></i> Live
+      </a>
+    `;
+
+    actionsDiv.appendChild(githubBtn);
+    actionsDiv.appendChild(liveBtn);
+    card.appendChild(actionsDiv);
+
+    // Append card to container
+    projectsContainer.appendChild(card);
+  });
+}
+
+
+fetchProjectData();

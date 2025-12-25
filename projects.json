@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Work Mitra",
+        "description": "WorkMitra is a service marketplace web app connecting users with local providers, featuring real-time booking, and provider dashboards.",
+        "image": "assets/images/workmitra.png",
+        "github":"https://github.com/mongamnarendra/Workmitra",
+        "live":"https://workmitra-cc97d.web.app/home"
+    },
+    {
+        "title": "Expense Tracker",
+        "description": "I created a expense tracker Web application ,which have features like adding our spending,and our monthly budget.For visualizing the data i used pie charts.",
+        "image": "assets/images/expensetracker.png",
+        "github":"https://github.com/mongamnarendra/ExpenseTracker",
+        "live":"https://expensetracker-381f4.web.app/"
+    },
+    {
+        "title": "Alumini Association",
+        "description": "I developed a basic Alumni Association Platform using HTML and CSS to create a structured and visually appealing interface for alumni connections.",
+        "image": "https://tse2.mm.bing.net/th?id=OIP.p5nhdLp1UpPBQgFUfXogLQHaD_&pid=Api&P=0&h=180",
+        "github":"https://github.com/mongamnarendra/Alumni-Association.git",
+        "live":"https://mongamnarendra.github.io/Alumni-Association/alumini.html"
+    }
+]
